@@ -1,6 +1,9 @@
 ## The slides:
 https://docsend.com/view/swfzsus
 
+## Docker tutorial course
+https://training.docker.com/user/consume/course_pathway/824abc9f-c99a-3031-a28b-e289f2910991
+
 
 ## Commands:
 
