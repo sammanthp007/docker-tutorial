@@ -36,3 +36,8 @@ docker build -t <userid>/<any name> .
 ```
 docker run -p 8888:5000 sammanthp007/flask-example
 ```
+
+### Running a new docker instance OS
+```
+docker run -itd --name kali --network="host" kalilinux/kali-linux-docker
+```
