@@ -22,6 +22,11 @@ docker images
 docker stop <id>
 ```
 
+### For removing stopped images
+```
+docker rm <id>
+```
+
 ### For removing the image from the computer itself
 ```
 docker rmi <id>
@@ -37,7 +42,22 @@ docker build -t <userid>/<any name> .
 docker run -p 8888:5000 sammanthp007/flask-example
 ```
 
-### Running a new docker instance OS
+### Running a new docker instance OS while using hosts ip as connection
 ```
 docker run -itd --name kali --network="host" kalilinux/kali-linux-docker
+```
+
+### For executing the bash of OS
+```
+docker exec -it kali bash
+```
+
+### For creating a copy of a stopped container
+```
+docker commit kali kaliNew
+```
+
+### For running a new docker instance OS while using its own ports
+```
+docker run -p 666:80 -itd --name kaliNew kaliNew
 ```
